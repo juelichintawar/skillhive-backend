@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Request Changes"
+            android:textColor="#0F172A"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Tell the provider exactly what you'd like changed in the project."
+            android:textColor="#64748B"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp" />
+
+        <!-- Project Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/bg_detail_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/tvProjectTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project"
+                android:textColor="#0F172A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvServiceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Service"
+                android:textColor="#1264E5"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Previous Submission -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Previous Submission"
+            android:textColor="#0F172A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_detail_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvPreviousMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Previous project submission"
+                android:textColor="#475569"
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp" />
+
+            <TextView
+                android:id="@+id/tvPreviousLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Project link"
+                android:textColor="#1264E5"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Changes -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="What needs to be changed?"
+            android:textColor="#0F172A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Describe the changes clearly so the provider knows exactly what to update."
+            android:textColor="#64748B"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etRevisionMessage"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input_field"
+            android:gravity="top|start"
+            android:hint="Example: Please fix the login button alignment, update the documentation, and improve the QR scanner screen."
+            android:inputType="textMultiLine|textCapSentences"
+            android:maxLength="3000"
+            android:padding="14dp"
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvCharacterCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="end"
+            android:text="0 / 3000"
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+
+        <!-- Send Button -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSendRevision"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_primary_button"
+            android:backgroundTint="@null"
+            android:text="Send Request to Provider"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="The provider will be notified and can make the requested changes."
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</ScrollView>

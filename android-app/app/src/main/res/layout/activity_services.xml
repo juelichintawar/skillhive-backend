@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="22dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="28dp">
+
+        <!-- ================= HEADER ================= -->
+
+        <TextView
+            android:id="@+id/tvServicesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Services"
+            android:textColor="#0F172A"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvServicesSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Discover services offered by talented students"
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <!-- ================= SEARCH ================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_service_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⌕"
+                android:textColor="#64748B"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etSearchService"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Search services..."
+                android:inputType="text"
+                android:padding="0dp"
+                android:singleLine="true"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Browse by Category"
+            android:textColor="#0F172A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- ALL -->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCategoryAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_category_selected"
+                    android:backgroundTint="@null"
+                    android:minHeight="0dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="All"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <!-- ANDROID -->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCategoryAndroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_category"
+                    android:backgroundTint="@null"
+                    android:minHeight="0dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="Android"
+                    android:textAllCaps="false"
+                    android:textColor="#1264E5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <!-- WEB -->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCategoryWeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_category"
+                    android:backgroundTint="@null"
+                    android:minHeight="0dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="Web"
+                    android:textAllCaps="false"
+                    android:textColor="#1264E5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <!-- UI/UX -->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCategoryUIUX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_category"
+                    android:backgroundTint="@null"
+                    android:minHeight="0dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="UI/UX"
+                    android:textAllCaps="false"
+                    android:textColor="#1264E5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <!-- AI/ML -->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCategoryAI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_category"
+                    android:backgroundTint="@null"
+                    android:minHeight="0dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="AI/ML"
+                    android:textAllCaps="false"
+                    android:textColor="#1264E5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <!-- DATABASE -->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCategoryDatabase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/bg_category"
+                    android:backgroundTint="@null"
+                    android:minHeight="0dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="Database"
+                    android:textAllCaps="false"
+                    android:textColor="#1264E5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+                <!-- OTHER -->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCategoryOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:background="@drawable/bg_category"
+                    android:backgroundTint="@null"
+                    android:minHeight="0dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
+                    android:text="Other"
+                    android:textAllCaps="false"
+                    android:textColor="#1264E5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <!-- ================= SECTION TITLE ================= -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Available Services"
+            android:textColor="#0F172A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Explore skills offered by students on campus"
+            android:textColor="#64748B"
+            android:textSize="13sp" />
+
+        <!-- ================= LOADING ================= -->
+
+        <ProgressBar
+            android:id="@+id/progressBarServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            android:visibility="gone" />
+
+        <!-- ================= SERVICES ================= -->
+
+        <LinearLayout
+            android:id="@+id/servicesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical" />
+
+        <!-- ================= EMPTY STATE ================= -->
+
+        <TextView
+            android:id="@+id/tvNoServices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_empty_state"
+            android:gravity="center"
+            android:padding="28dp"
+            android:text="No services found"
+            android:textColor="#64748B"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>

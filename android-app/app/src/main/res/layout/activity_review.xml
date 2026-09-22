@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="32dp">
+
+        <!-- HEADER -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Your Experience"
+            android:textColor="#0F172A"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Share your experience and help other students choose better services."
+            android:textColor="#64748B"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2dp" />
+
+        <!-- RATING CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/bg_review_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingTop="24dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How would you rate this service?"
+                android:textColor="#0F172A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tap a star to give your rating"
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1"
+                android:progressTint="#1264E5"
+                android:secondaryProgressTint="#D7E3F5"
+                android:backgroundTint="#D7E3F5" />
+
+            <TextView
+                android:id="@+id/tvRatingValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_rating_value"
+                android:paddingStart="16dp"
+                android:paddingTop="7dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="7dp"
+                android:text="0 / 5"
+                android:textColor="#1264E5"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- REVIEW CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_review_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write a Review"
+                android:textColor="#0F172A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tell us what you liked or what could be improved."
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etReviewComment"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_review_input"
+                android:gravity="top|start"
+                android:hint="Write your review (optional)"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="1000"
+                android:paddingStart="16dp"
+                android:paddingTop="14dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="14dp"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Your review will be visible on the provider's profile."
+                android:textColor="#94A3B8"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <!-- LOADING -->
+
+        <ProgressBar
+            android:id="@+id/progressBarReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+
+        <!-- SUBMIT BUTTON -->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmitReview"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_primary_button"
+            android:backgroundTint="@null"
+            android:text="Submit Review"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

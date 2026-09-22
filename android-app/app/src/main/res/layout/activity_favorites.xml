@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="22dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="32dp">
+
+        <!-- Header -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_detail_header"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAVED SERVICES"
+                android:textColor="#DCEBFF"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12" />
+
+            <TextView
+                android:id="@+id/tvFavoritesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="My Favorites"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvFavoritesSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="Services you saved for later"
+                android:textColor="#DCEBFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <!-- Favorites Section -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_detail_card"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saved Services"
+                android:textColor="#0F172A"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Quickly access services you may want to request."
+                android:textColor="#64748B"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/favoritesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical" />
+
+            <!-- Empty State -->
+
+            <TextView
+                android:id="@+id/tvNoFavorites"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_empty_state"
+                android:gravity="center"
+                android:padding="28dp"
+                android:text="♡\n\nNo favorite services yet.\nSave services you like to find them quickly later."
+                android:textColor="#64748B"
+                android:textSize="14sp"
+                android:lineSpacingExtra="3dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

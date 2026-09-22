@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Project"
+            android:textColor="#0F172A"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit your completed work to the client."
+            android:textColor="#64748B"
+            android:textSize="14sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Project Message -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Message"
+            android:textColor="#0F172A"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etProjectMessage"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="top|start"
+            android:padding="14dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Describe the completed work..."
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:textSize="14sp"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="18dp" />
+
+        <!-- Project Link -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Link"
+            android:textColor="#0F172A"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etProjectLink"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="14dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="GitHub or project link"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:textSize="14sp"
+            android:inputType="textUri"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Submit Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmitProject"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Submit Project"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_primary_button"
+            android:backgroundTint="@null" />
+
+    </LinearLayout>
+
+</ScrollView>

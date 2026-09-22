@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submitted Project"
+            android:textColor="#0F172A"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review the project submitted by the service provider."
+            android:textColor="#64748B"
+            android:textSize="14sp"
+            android:layout_marginBottom="22dp" />
+
+        <!-- Project Message -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Message"
+            android:textColor="#0F172A"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etProjectMessage"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="top|start"
+            android:padding="14dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Project message"
+            android:textColor="#0F172A"
+            android:textColorHint="#64748B"
+            android:textSize="14sp"
+            android:inputType="textMultiLine"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Project Link -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Link"
+            android:textColor="#0F172A"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etProjectLink"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:padding="14dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="GitHub or project link"
+            android:textColor="#1264E5"
+            android:textColorHint="#64748B"
+            android:textSize="14sp"
+            android:inputType="textUri"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Request Changes -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRequestChanges"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Request Changes"
+            android:textAllCaps="false"
+            android:textColor="#1264E5"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_rating_card"
+            android:backgroundTint="@null"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Accept and Complete -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAcceptComplete"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Accept &amp; Complete"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/bg_primary_button"
+            android:backgroundTint="@null" />
+
+    </LinearLayout>
+
+</ScrollView>

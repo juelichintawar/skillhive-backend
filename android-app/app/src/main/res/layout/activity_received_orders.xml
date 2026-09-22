@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FB"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="22dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="30dp">
+
+        <!-- Page Title -->
+        <TextView
+            android:id="@+id/tvOrdersTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Received Orders"
+            android:textColor="#0F172A"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvOrdersSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Manage service requests received from students"
+            android:textColor="#64748B"
+            android:textSize="14sp" />
+
+        <!-- Section Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Incoming Orders"
+            android:textColor="#0F172A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Review and manage orders for your services"
+            android:textColor="#64748B"
+            android:textSize="13sp" />
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progressBarOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            android:visibility="gone" />
+
+        <!-- Orders -->
+        <LinearLayout
+            android:id="@+id/ordersContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical" />
+
+        <!-- Empty State -->
+        <TextView
+            android:id="@+id/tvNoOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_empty_state"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="No received orders"
+            android:textColor="#64748B"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>
